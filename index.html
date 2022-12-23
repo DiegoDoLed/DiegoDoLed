@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego do LED</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/DIEGO_DO_LED_2023_LOGO.jpg" alt="Logomarca Diego do Led">
+        
+        <ul>
+            <li>
+                <a href="https://maps.app.goo.gl/rUYjT9G3YkEvr7fFA" target="_blank" >Localização</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/rennan_diego?igshid=ZDdkNTZiNTM=" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/rennan.diego.7?mibextid=ZbWKwL"target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://wa.me/+5591987282616" target="_blank">WhatsApp</a>
+            </li>
+            <!-- Input texto -->
+            <input type="text" value="91987282616" id="texto-usuario" />
+
+            <!-- Botão que usaremos para copiar -->
+            <button onclick="copiarTexto()">Copiar pix!</button>
+
+            <script type="text/javascript">
+            function copiarTexto() {
+                /* Selecionamos por ID o nosso input */
+                var textoCopiado = document.getElementById("texto-usuario");
+              
+                /* Deixamos o texto selecionado (em azul) */
+                textoCopiado.select();
+                textoCopiado.setSelectionRange(0, 99999); /* Para mobile */
+              
+                /* Copia o texto que está selecionado */
+                document.execCommand("copy");
+              
+                alert("Texto copiado: " + textoCopiado.value);
+              }
+            </script>
+            
+                
+        </ul>
+    </div>
+</body>
+
+</html>
